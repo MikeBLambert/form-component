@@ -1,0 +1,25 @@
+{
+  "name": "form-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss css/*.css -d build/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeBLambert/form-component.git"
+  },
+  "author": "Mike Lambert <mlamb128@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeBLambert/form-component/issues"
+  },
+  "homepage": "https://github.com/MikeBLambert/form-component#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "postcss-cli": "^6.0.1",
+    "postcss-nested": "^4.1.0",
+    "postcss-simple-vars": "^5.0.1"
+  }
+}
