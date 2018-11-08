@@ -4,13 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="build/css/main.css">
+    <title>Form</title>
 </head>
 <body>
     <form action="submit">
-        <button>
-            
-        </button>
+        <div id="whole-form">
+            <h1>Please submit your project below:</h1>
+            <div id="details">
+                <h3>Basic Info</h3>
+                <div class="info">
+                    <label for="name">Project Name</label>
+                    <input type="text" name="info" id="name" value="">
+                </div>
+                <div class="info">
+                    <label for="description">Description</label>
+                    <textarea type="text" name="info" id="description" value=""></textarea>
+                </div>
+                <div class="info">
+                    <label for="image">Image</label>
+                    <div id="file-button">
+                        <button>Choose File</button>
+                        <input type="file" name="info" id="image">
+                    </div>
+                </div>
+            </div>
+    
+            <div id="languages">
+                <h3>Languages/Frameworks/Tools Used</h3>
+                <div class="language">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="languages" id="html" value="html">
+                </div>
+                <div class="language">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="languages" id="css" value="css">
+                </div>
+                <div class="language">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" name="languages" id="javascript" value="javascript">
+                </div>
+                <div class="language">
+                    <label for="node">Node</label>
+                    <input type="checkbox" name="languages" id="node" value="node">
+                </div>
+                <div class="language">
+                    <label for="express">Express</label>
+                    <input type="checkbox" name="languages" id="express" value="express">
+                </div>
+                <div class="language">     
+                    <label for="vue">Vue</label>
+                    <input type="checkbox" name="languages" id="vue" value="vue">
+                </div>
+                <div class="language">
+                    <label for="react">React</label>
+                    <input type="checkbox" name="languages" id="react" value="react">
+                </div>
+                <div class="language">
+                    <label for="postgreSQL">PostgreSQL</label>
+                    <input type="checkbox" name="languages" id="postgreSQL" value="postgreSQL">    
+                </div>
+                <div class="language">
+                    <label for="mongoDB">MongoDB</label>
+                    <input type="checkbox" name="languages" id="mongoDB" value="mongoDB">
+                </div>
+            </div>
+    
+            <h3>Project Type</h3>
+            <div id="types">
+                <div class="type">
+                    <label for="group">Group</label>
+                    <input type="radio" name="type" id="group" value="group">
+                </div>
+                <div class="type">
+                    <label for="individual">Individual</label>
+                    <input type="radio" name="type" id="individual" value="individual">
+                </div>
+            </div>
+            <button id="submit-button">Submit</button>
+        </div>
     </form>
 </body>
 </html>

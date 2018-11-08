@@ -11,73 +11,83 @@ body {
 
 
 
-#details {
-
-    h3 {
+#details h3 {
         grid-column-start: 1;
         grid-column-end: -1;
     }
 
-    .info {
+
+
+#details .info {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         padding: 15px;
-        /* vertical-align: middle; */
+    }
 
-        textarea {
+
+
+/* vertical-align: middle; */
+
+
+
+#details .info textarea {
             height: 100px;
         }
 
-        #file-button {
+
+
+#details .info #file-button {
             postion: relative;
-            #image {
+        }
+
+
+
+#details .info #file-button #image {
                 position: absolute;
                 height: 35px;
                 opacity: 0;
             }
 
-            button {
+
+
+#details .info #file-button button {
                 position: absolute;
                 width: 250px;
             }
-        }
-    }
-}
 
 #languages {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+}
 
-    h3 {
+#languages h3 {
         grid-column-start: 1;
         grid-column-end: -1;
     }
 
-    .language {
+#languages .language {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: center; 
+    }
 
-        input {
+#languages .language input {
             width: 20px;
             height: 20px;
-        } 
-    }
-}
+        }
 
 
 #types {
     display: flex;
     flex-direction: row;
+}
 
-    .type {
-        input {
+
+#types .type input {
             width: 20px;
             height: 20px;
             vertical-align: middle;
         }
-    }
-}
 
 
 
